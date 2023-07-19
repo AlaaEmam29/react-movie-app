@@ -72,7 +72,6 @@ export default function Register() {
 
 
   const sendRegisterData = async () => {
-    console.log(user , "-------user- -----------")
     const { data } = await axios.post(
       "https://route-ecommerce.onrender.com/api/v1/auth/signup",
       user
@@ -114,10 +113,7 @@ export default function Register() {
 
     }
   };
-  useEffect(() => {
-      console.log("errList" , errorList)
-
-} , [])
+ 
   return (
     <>
     <div className="container">
